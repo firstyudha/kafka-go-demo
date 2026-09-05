@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Go Event-Driven Architecture Demo</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Go Event-Driven Architecture Demo</h1>
+      <p class="subtitle">Producer → Kafka → Consumers</p>
+    </header>
+
+    <section class="card">
+      <h2>Create Order</h2>
+      <form id="order-form">
+        <label>
+          Order ID
+          <input type="text" id="orderId" name="orderId" required autocomplete="off">
+        </label>
+        <label>
+          Amount
+          <input type="number" id="amount" name="amount" required step="any" min="0.01">
+        </label>
+        <button type="submit">Create Order</button>
+      </form>
+    </section>
+
+    <section class="card" id="status" hidden>
+      <h2>Event</h2>
+      <p id="status-line">—</p>
+      <dl>
+        <dt>Event ID</dt><dd><code id="event-id"></code></dd>
+        <dt>Order ID</dt><dd><code id="echo-order-id"></code></dd>
+        <dt>Amount</dt><dd><code id="echo-amount"></code></dd>
+        <dt>Timestamp</dt><dd><code id="timestamp"></code></dd>
+      </dl>
+    </section>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

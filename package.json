@@ -1,0 +1,12 @@
+{
+  "name": "kafka-go-demo-webinar",
+  "version": "1.0.0",
+  "description": "Build scripts for the reveal.js webinar deck (WEBINAR.html + WEBINAR.pdf)",
+  "private": true,
+  "scripts": {
+    "test": "node --test scripts/__tests__/*.test.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
+  }
+}

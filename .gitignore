@@ -1,0 +1,26 @@
+# Build artifacts
+*.exe
+/producer
+/email-consumer
+/inventory-consumer
+
+# Go workspace files
+go.work
+go.work.sum
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# demo-scale runtime artifacts (PID files + logs)
+.run/
+
+# Node dependencies for webinar PDF generation
+node_modules/
+
+# Playwright MCP scratch
+.playwright-mcp/
